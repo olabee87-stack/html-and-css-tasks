@@ -1,0 +1,11 @@
+body {
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  background: cornsilk;
+  line-height: 2rem;
+}
+
+h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 32px;
+}

@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /*background: #f4f4f4;*/
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+#home_aside,
+#about_us,
+#contact {
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0 0 20px 0;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+a {
+    color: rgb(207, 48, 61);
+}
+
+header {
+    background: white;
+}
+
+input,
+textarea {
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid yellowgreen;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+
+/* Utilities (to be used in secified areas) */
+
+.container {
+    padding: 50px;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    background-color: pink;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: none;
+    font-size: 1rem;
+    font-family: Verdana, sans-serif;
+}
+
+.btn-secondary {
+    background-color: lightseagreen;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: none;
+    font-size: 1rem;
+    font-family: Verdana, sans-serif;
+    border: 1px solid black;
+}
+
+
+/*Header*/
+
+#main_nav {
+    text-align: center;
+}
+
+.logo img {
+    height: 100px;
+}
+
+#trade {
+    color: coral;
+}
+
+#main_nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+}
+
+#main_nav ul li a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+#main_nav ul li a:hover {
+    color: lightseagreen;
+    border-bottom: 4px solid lightseagreen;
+    font-family: cursive;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+
+/*Home aside */
+
+
+/*This is the main home, disregard the aside here, e no belong o*/
+
+#home_aside {
+    height: 80vh;
+    background: url("https://source.unsplash.com/1600x900/?travel,dubai") no-repeat center center/cover;
+}
+
+.home_aside_content {
+    background: rgba(254, 97, 0, 0.5);
+    width: 90%;
+    max-height: 90vh;
+    padding: 5px 20px 5px 20px;
+    margin-top: 5vh;
+    color: white;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home_aside_content h1 {
+    font-size: 1rem;
+}
+
+
+/* ABOUT US */
+
+#about_us {
+    background: pink;
+}
+
+.about_content {
+    width: 100%;
+    padding-top: 2rem;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.about_content .about_text {
+    float: left;
+    width: 33vw;
+    padding-top: 50px;
+}
+
+.about_content img {
+    width: 33vw;
+    float: right;
+    margin-top: 30px;
+    border-radius: 5px;
+    max-height: 300px;
+    opacity: 0.8;
+}
+
+
+/*FOOTER*/
+
+#contact {
+    background: #333;
+    height: 130vh;
+    display: block;
+    color: aliceblue;
+}
+
+#contact h3 {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dotted rgb(77, 77, 77);
+}
+
+form {
+    float: left;
+    width: 33vw;
+}
+
+.form_group {
+    margin: 10px 0;
+}
+
+.footer_button {
+    margin-top: 100px;
+}
+
+#contact label {
+    /*This code will properly align the labels on a block*/
+    width: 35%;
+    display: inline-block;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="password"] {
+    width: 60%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#contact input[type="radio"],
+#contact input[type="checkbox"] {
+    margin: 0 20px;
+    display: inline-block;
+}
+
+#contact textarea {
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 90%;
+}
+
+#contact .my_aside {
+    float: right;
+    width: 45%;
+    background: rgba(254, 97, 0, 0.5);
+    padding: 10px;
+    color: aliceblue;
+}

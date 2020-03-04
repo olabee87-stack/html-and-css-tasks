@@ -1,0 +1,112 @@
+body {
+  background-color: rgb(141, 143, 165);
+  font-family: "Nunito 15px", sans-serif;
+  color: #fff;
+}
+
+/* Header area */
+header {
+  background-color: rgb(182, 125, 125);
+  text-align: right;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 25px;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 25px;
+}
+
+header ul li a:hover {
+  background-color: rgb(69, 139, 122);
+}
+
+/* Main area */
+img {
+  height: 200px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: rgb(182, 125, 125);
+}
+
+tr {
+  border-bottom: 1px solid whitesmoke;
+}
+th,
+td {
+  width: 300px;
+  padding: 20px;
+}
+
+/* Boxes */
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(182, 125, 125);
+  margin: 20px;
+}
+
+#box1 {
+  border: 6px double #fff;
+  padding: 50px;
+}
+
+#box2 {
+  border: 6px dashed #fff;
+  margin-bottom: 50px;
+}
+
+#box3 {
+  border-width: 10px;
+  border-style: solid;
+  border-color: green yellow blue red;
+}
+
+#box3 {
+  border-width: 10px;
+  border-style: solid;
+  border-color: green yellow blue red;
+}
+
+#box4 {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+#box5 {
+  border: 2px dashed #fff;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+#boxes {
+  background-image: url("https://source.unsplash.com/weekly?water");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  background: url("https://source.unsplash.com/random?vienna") no-repeat fixed
+    center center/cover;
+}

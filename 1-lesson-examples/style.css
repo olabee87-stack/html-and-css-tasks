@@ -1,0 +1,14 @@
+body {
+  background: coral;
+}
+/* How I styled my html page*/
+
+#my_id {
+  color: white;
+  text-align: center;
+}
+
+.my_class {
+  font-family: verdana, sans-serif;
+  font-size: 20px;
+}
