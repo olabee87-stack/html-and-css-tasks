@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: cornsilk;
+  --primary-color: pink;
+  --secondary-color: sandybrown;
+}
+
+body {
+  background-color: var(--background-color);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.box {
+  background-color: var(--primary-color);
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 5px #333;
+  border-radius: 5px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transition: transform 5s 1s;
+  /*transform: rotate(-130deg);*/
+  /*transform: skewY(100deg);*/
+  /*transform: skewX(20deg);*/
+  /*transform: skew(20deg, 20deg);*/
+  /*transform: scale(1.5);*/
+  /*transform: scale(-2);*/
+  /*transform: translateY(200px);*/
+  /*transform: translateX(200px);*/
+  /*transform: translateX(200px) translateX(400px);*/
+  /*transform: translate(200px, 400px);*/
+}
+
+.circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: var(--primary-color);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s 1s;
+}
+
+.circle:hover {
+  transform: scale(2);
+  background-color: yellow;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  transition: all 2s;
+  background-color: var(--primary-color);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.square:hover {
+  transform: rotate(180deg);
+  background-color: rgb(0, 255, 85);
+}
+
+.rectangle {
+  padding: 1rem;
+  width: 200px;
+  height: 100px;
+  transition: all 2s;
+  background-color: var(--primary-color);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.rectangle:hover {
+  width: 75px;
+  height: 75px;
+}
+
+.rectangle p {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.rectangle:hover p {
+  opacity: 1;
+}
+
+.underline {
+  display: inline-block;
+}
+
+.underline p::after {
+  content: "";
+  display: block;
+  margin-top: 1rem;
+  height: 4px;
+  width: 0;
+  background: var(--primary-color);
+  transition: all 0.3s ease-in;
+}
+
+p:hover::after {
+  width: 100%;
+}
+
+.animated-circle {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation-name: animated-circle;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+}
+
+.animated-circle:hover {
+  animation-play-state: paused;
+}
+
+/*@keyframes animated-circle {
+  from {
+    background: var(--primary-color);
+  }
+
+  to {
+    background: var(--secondary-color);
+  }
+}*/
+
+@keyframes animated-circle {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  25% {
+    top: 0px;
+    left: 300px;
+    background-color: rgb(0, 255, 85);
+  }
+
+  50% {
+    top: 300px;
+    left: 300px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 2px;
+  }
+
+  75% {
+    top: 300px;
+    left: 0p;
+    background-color: goldenrod;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.task-5 {
+  position: relative;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  background: gold;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.task-5 h3 {
+  padding: 25px;
+}
+
+/*LEFT SIDE*/
+.task-5 h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 200px;
+  border-left: 3px solid magenta;
+  transition: all 1s;
+}
+.task-5:hover h3::before {
+  bottom: 0;
+}
+
+/*RIGHT SIDE*/
+.task-5 h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-right: 3px solid magenta;
+  transition: all 1s;
+}
+.task-5:hover h3::after {
+  top: 0;
+}
+
+/*TOP SIDE*/
+.task-5::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 200px;
+  bottom: 0;
+  border-top: 3px solid magenta;
+  transition: all 1s;
+}
+.task-5:hover::before {
+  left: 0;
+}
+
+/*BOTTOM SIDE*/
+.task-5::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 200px;
+  left: 0;
+  bottom: 0;
+  border-bottom: 5px solid magenta;
+  transition: all 1s;
+}
+.task-5:hover::after {
+  right: 0;
+}
