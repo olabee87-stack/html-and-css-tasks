@@ -76,7 +76,7 @@ header ul li a:hover {
 }
 
 h2 {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 p {
@@ -88,7 +88,7 @@ p {
 .container {
     max-width: 960px;
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 footer {
