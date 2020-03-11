@@ -13,31 +13,43 @@
 
 <body>
 
-  
-        <div class="menu-btn">
-            <i class="fas fa-bars fa-2x"></i>
+
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <a href="#showcase">
+                <h1>JOBS IN<br>FINLAND</br>
+                </h1>
+            </a>
+            <div class="item"><a href="#">Working in Finland</a></div>
         </div>
 
-        <header>
-            <div class="logo-container">
-                <a href="#showcase">
-                    <h1>JOBS IN<br>FINLAND</br>
-                    </h1>
-                </a>
-                <div class="item"><a href="#">Working in Finland</a></div>
-            </div>
-
-            <nav class="main-nav">
-                <ul class="nav-grid">
-                    <li class="menu"><a href="index.html">Jobs Home</a></li>
-                    <li class="menu"><a href="#region">Regions</a></li>
-                    <li class="menu"><a href="#category">Open Positions</a></li>
-                        <li class="menu"><a href="#">About</a></li>
-                        <li class="menu"><a href="#">For Employers</a></li>
-                </ul>
-            </nav>
-        </header>
-<main>
+        <nav class="main-nav">
+            <ul class="nav-grid">
+                <li class="menu"><a href="index.html">Jobs Home</a></li>
+                <li class="menu region-menu"><a href="#">Regions</a>
+                    <ul class="sub-menu">
+                        <li class="menu2"><a href="#">Turku & Southwest Finland</a></li>
+                        <li class="menu2"><a href="#">Lapland</a></li>
+                        <li class="menu2"><a href="#">Lakeland</a></li>
+                        <li class="menu2"><a href="#">Helsinki region</a></li>
+                        <li class="menu2"><a href="#">Espoo</a></li>
+                        <li class="menu2"><a href="#">Tampere</a></li>
+                        <li class="menu2"><a href="#">Oulu</a></li>
+                        <li class="menu2"><a href="#">Talent Coastline</a></li>
+                        <li class="menu2"><a href="#">Kuopio</a></li>
+                    </ul>
+                </li>
+                <li class="menu"><a href="#">Open Positions</a></li>
+                <li class="menu"><a href="#">About</a></li>
+                <li class="menu"><a href="#">For Employers</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
         <section id="showcase" class="grid-container">
             <div class="showcase-img"></div>
             <div class="showcase-text">
@@ -173,8 +185,8 @@
             </div>
 
         </section>
-</main>
-<footer>
+    </main>
+    <footer>
         <section id="footer" class="footer-grid">
             <div class="footer-grid-item jobs">
                 <h4>JOBS IN <br><strong>FINLAND</strong></h4>
@@ -182,11 +194,11 @@
             <div class="footer-grid-item links">
                 <h3>LINKS</h3>
                 <p><a href="#"><strong>Finland: Work in Finland</strong></a>
-                <br>The why and how of starting your career in Finland.</br>
+                    <br>The why and how of starting your career in Finland.</br>
                 </p>
 
                 <p><a href="#"><b>Migri.fi</b></a>
-                <br>Residence permits and other useful information from the Finnish Immigration Service.</br>
+                    <br>Residence permits and other useful information from the Finnish Immigration Service.</br>
                 </p>
 
                 <p><a href="#"><strong>InfoFinland.fi</strong></a><br>Info on moving to Finland, living and working here.</br>
@@ -209,15 +221,15 @@
             </div>
 
         </section>
-</footer>
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
-        <script src="scripts.js"></script>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="scripts.js"></script>
 
-        <script>
-            document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.nav-grid').classList.toggle('show'));
-        </script>
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.nav-grid').classList.toggle('show'));
+    </script>
 
-    </body>
+</body>
 
 </html>
