@@ -102,14 +102,12 @@ p.margin-bottom {
 
 .nav-grid .menu {
     display: inline-block;
-    padding-bottom: 0.5rem;
     text-decoration: none;
     color: white;
     margin: auto;
     font-size: 2.4vh;
-    padding-left: 2%;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding: 1rem 0 0.5rem 2%;
+    position: relative;
 }
 
 .nav-grid .menu a {
@@ -119,6 +117,7 @@ p.margin-bottom {
 
 .nav-grid .menu a:hover {
     border-bottom: 2px #fff solid;
+    padding-bottom: 20px;
 }
 
 
@@ -151,6 +150,51 @@ p.margin-bottom {
 .showcase-text {
     color: white;
     padding-top: 5rem;
+}
+
+
+/*SECOND MENU*/
+
+.grid-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.region-menu:hover .sub-menu {
+    visibility: visible;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    display: block;
+    list-style-type: none;
+    background-color: rgb(245, 238, 234);
+    text-transform: none;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.menu2 {
+    padding: 0 8rem 0 0.5rem;
+    line-height: 2.5rem;
+    font-size: 15px;
+    font-weight: 400;
+    width: 150%;
+}
+
+.sub-menu .menu2 a {
+    color: rgb(5, 5, 170);
+    display: block;
+    width: 100%;
+}
+
+.sub-menu .menu2 a:hover {
+    border-bottom: 0;
+    background-color: rgb(197, 197, 230);
 }
 
 
@@ -303,6 +347,7 @@ p.bolder {
     color: #fff;
     text-decoration: none;
     min-height: 80vh;
+    position: relative;
 }
 
 .footer-grid p {
@@ -318,10 +363,13 @@ p.bolder {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .photo-grid {
         display: grid;
         grid-template-columns: repeat(2, 3fr);
+    }
+    .nav-grid .menu {
+        display: block;
     }
     .menu-btn {
         display: block;
@@ -353,5 +401,8 @@ p.bolder {
     }
     .main-nav ul.nav-grid li:last-child {
         border-bottom: 0;
+    }
+    .sub-menu {
+        z-index: 1000;
     }
 }
