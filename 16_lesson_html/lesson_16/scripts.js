@@ -19,12 +19,12 @@ function topFunction() {
 
 //MENU BUTTON//
 
-let menu_btn = document.getElementById("menu-btn");
-menu_btn.addEventListener("click", hideMenu);
+let btn = document.querySelector(".menu-btn");
+let menu = document.querySelector(".nav-grid");
 
-function hideMenu() {
-    alert("close me oo");
-    console.log("Eti close mi ni?");
+//EVENT LISTENER //
+btn.addEventListener("click", showList);
+
+function showList() {
+    menu.classList.toggle("show");
 }
-
-// document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.nav-grid').classList.toggle('show'));
