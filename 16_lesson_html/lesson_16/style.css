@@ -16,6 +16,10 @@ body {
     line-height: 1.5;
 }
 
+header {
+    position: relative;
+}
+
 
 /*UNIVERSAL*/
 
@@ -49,18 +53,25 @@ p.margin-bottom {
 }
 
 
+/*HAMBURGER MENU*/
+
+.menu-btn {
+    display: none;
+}
+
+
 /*SCROLL TO TOP BUTTON*/
 
 #myBtn {
     display: none;
-    /*position: fixed;*/
+    position: fixed;
     bottom: 40px;
     right: 20px;
     z-index: 99;
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgb(245, 30, 30);
+    background-color: rgb(92, 89, 245);
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -87,6 +98,10 @@ p.margin-bottom {
     color: rgb(5, 5, 170);
 }
 
+.search-btn {
+    display: none;
+}
+
 
 /*NAV CONTAINER GRID*/
 
@@ -98,6 +113,7 @@ p.margin-bottom {
     height: 60px;
     margin: 0;
     text-transform: uppercase;
+    position: relative;
 }
 
 .nav-grid .menu {
@@ -115,9 +131,19 @@ p.margin-bottom {
     color: white;
 }
 
+.nav-grid a.active {
+    border-bottom: 2px #fff solid;
+}
+
 .nav-grid .menu a:hover {
     border-bottom: 2px #fff solid;
     padding-bottom: 20px;
+}
+
+.menu a .fa-search {
+    position: absolute;
+    right: -35rem;
+    bottom: 0;
 }
 
 
@@ -231,13 +257,9 @@ p.bolder {
     position: relative;
 }
 
-.photo-item a {
+.photo-grid a .photo-item-text {
     text-decoration: none;
     color: white;
-}
-
-.photo-item a:hover {
-    border-bottom: 2px #fff solid;
 }
 
 .photo-item-text {
@@ -363,7 +385,19 @@ p.bolder {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+    .logo-container {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-gap: 0.5rem;
+        color: rgb(5, 5, 170);
+    }
+    .logo-container div.item {
+        display: none;
+    }
+    .search-btn {
+        display: block;
+    }
     .photo-grid {
         display: grid;
         grid-template-columns: repeat(2, 3fr);
@@ -371,8 +405,20 @@ p.bolder {
     .nav-grid .menu {
         display: block;
     }
+    .logo-container {
+        position: relative;
+    }
+    .menu a .fa-search {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        display: block;
+    }
     .menu-btn {
         display: block;
+        height: 80px;
+        width: 80px;
+        border-right: 1px solid #f0f0ff;
     }
     .menu-btn:hover {
         opacity: 0.5;
