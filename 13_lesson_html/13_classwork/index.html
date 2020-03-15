@@ -92,17 +92,17 @@
         </section>
 
         <section id="skills">
-            <div class="container">
+            <div class="container grid">
                 <h3>My Skills</h3>
 
-                <div class="content-text">
+                <div class="content-text item">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod porro nisi expedita voluptate corrupti magni quibusdam optio sequi exercitationem, deleniti perferendis, repudiandae dolores error a id veniam corporis vitae quasi!
                 </div>
 
 
 
                 <div class="skills-box">
-                    <div class="box-image">
+                    <div class="box-image item">
                         <i class="fab fa-html5 fa-2x"></i>
                         <div class="box">HTML
                             <div class="progress">
@@ -113,7 +113,7 @@
 
                         </div>
                     </div>
-                    <div class="box-image">
+                    <div class="box-image item">
                         <i class="fab fa-css3-alt fa-2x"></i>
                         <div class="box">CSS
                             <div class="progress">
@@ -121,7 +121,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="box-image">
+                    <div class="box-image item">
                         <i class="fab fa-js-square fa-2x"></i>
                         <div class="box">JS
                             <div class="progress">
@@ -129,7 +129,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="box-image">
+                    <div class="box-image item">
                         <i class="fab fa-figma fa-2x"></i>
                         <div class="box">UI design
                             <div class="progress">
@@ -170,7 +170,8 @@
                     <button type="submit" id="btn2">Send</button>
 
                     <div class="foot-btn">
-                        <a id="back-to-top-btn">Top</a>
+                        <button id="back-to-top-btn">Top</button>
+                        <!--<a id="back-to-top-btn">Top</a>-->
                     </div>
 
 
@@ -178,30 +179,8 @@
             </div>
         </div>
     </footer>
-    <!--Back to top button-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        jQuery(document).ready(function() {
-
-            var btn = $('#back-to-top-btn');
-
-            $(window).scroll(function() {
-                if ($(window).scrollTop() > 300) {
-                    btn.addClass('show');
-                } else {
-                    btn.removeClass('show');
-                }
-            });
-
-            btn.on('click', function(e) {
-                e.preventDefault();
-                $('html, body').animate({
-                    scrollTop: 0
-                }, '300');
-            });
-
-        });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
