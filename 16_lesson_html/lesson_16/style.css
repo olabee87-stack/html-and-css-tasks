@@ -12,7 +12,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: "Montserrat";
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -45,7 +45,7 @@ p.margin-bottom {
     margin: 1vh 0 2vh 0;
     font-size: large;
     font-weight: 600;
-    line-height: 6vh;
+    line-height: 2rem;
 }
 
 
@@ -121,7 +121,6 @@ p.margin-bottom {
     text-decoration: none;
     color: white;
     margin: auto;
-    font-size: 2.4vh;
     padding: 1rem 0 0.5rem 2%;
     position: relative;
 }
@@ -150,7 +149,7 @@ p.margin-bottom {
 /*SHOWCASE*/
 
 .big-font {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .span {
@@ -175,7 +174,7 @@ p.margin-bottom {
 
 .showcase-text {
     color: white;
-    padding-top: 5rem;
+    padding-top: 4rem;
 }
 
 
@@ -185,6 +184,7 @@ p.margin-bottom {
     display: grid;
     justify-items: center;
     align-items: center;
+    width: 100%;
 }
 
 .region-menu {
@@ -291,6 +291,10 @@ p.bolder {
     background: url("./jif_imgs/engr.jpg") center center/cover;
 }
 
+.finance {
+    background: url("./jif_imgs/finance.jpg") center center/cover;
+}
+
 .health {
     background: url("./jif_imgs/health.jpg") center center/cover;
 }
@@ -374,8 +378,8 @@ p.bolder {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     color: #fff;
+    height: 100vh;
     text-decoration: none;
-    min-height: 80vh;
     position: relative;
 }
 
@@ -392,7 +396,7 @@ p.bolder {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 700px) {
+@media (max-width: 764px) {
     .logo-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -453,6 +457,14 @@ p.bolder {
     .main-nav ul.nav-grid li:last-child {
         border-bottom: 0;
     }
+    .big-font {
+        font-size: 4rem;
+    }
+    p.bolder {
+        font-size: 3.5vh;
+        padding: 0.5rem;
+        line-height: 1.8;
+    }
     .sub-menu {
         z-index: 1000;
     }
@@ -461,5 +473,13 @@ p.bolder {
 @media (max-width: 500px) {
     .photo-grid {
         grid-template-columns: 1fr;
+    }
+    .big-font {
+        font-size: 3.5rem;
+    }
+    p.bolder {
+        font-size: 3vh;
+        padding: 1rem;
+        line-height: 1.8;
     }
 }
