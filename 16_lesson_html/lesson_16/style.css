@@ -378,7 +378,6 @@ p.bolder {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     color: #fff;
-    height: 100vh;
     text-decoration: none;
     position: relative;
 }
