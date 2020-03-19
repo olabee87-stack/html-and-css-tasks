@@ -11,8 +11,7 @@ html {
 
 body {
     background: lightpink;
-    margin: auto;
-    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .container {
@@ -48,7 +47,7 @@ body {
     /* align-items: center;*/
     align-items: baseline;
     justify-content: space-between;
-    background-color: purple;
+    background: rgb(10, 0, 10);
     color: white;
 }
 
@@ -58,13 +57,13 @@ section {
 }
 
 header {
-    background: rgb(122, 3, 122);
-    margin: auto;
+    background: rgb(10, 0, 10);
+    margin: 0 auto;
     display: flex;
-    padding: 20px;
+    padding: 15px;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
     color: white;
     position: fixed;
     width: 100%;
@@ -78,11 +77,12 @@ ul {
 
 #header ul {
     display: flex;
-    align-content: space-between;
+    align-content: space-around;
 }
 
 #header ul li {
     display: inline-block;
+    width: 100%;
     font-size: 1.2rem;
     padding: 0 10px;
 }
@@ -277,7 +277,7 @@ p {
     padding: 5px;
     border-radius: 5rem;
     display: inline-block;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 #btn2 {
@@ -302,7 +302,7 @@ p {
 /*Scroll to the top button*/
 
 #back-to-top-btn {
-    background: #a81878;
+    background: rgb(10, 0, 10);
     color: #fff;
     font-weight: 600;
     padding: 5px;
@@ -316,6 +316,11 @@ p {
     bottom: 1rem;
     right: 0;
     transition: background-color 0.3s;
+}
+
+#back-to-top-btn:hover {
+    background: #bd98b4;
+    color: rgb(10, 0, 10);
 }
 
 
@@ -332,10 +337,11 @@ p {
 }
 
 
-/* Add a red background color to navbar links on hover */
+/* Add a  background color to navbar links on hover */
 
 .dropdown:hover .menu-btn {
-    background-color: rgb(240, 107, 222);
+    background-color: rgb(228, 203, 224);
+    color: #a81878;
 }
 
 
@@ -379,7 +385,7 @@ p {
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .container,
     .container2,
     .container3 {

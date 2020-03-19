@@ -197,9 +197,9 @@ p.margin-bottom {
 
 .sub-menu {
     position: absolute;
-    top: 30px;
+    top: 60px;
     left: 0;
-    width: 100%;
+    width: 250px;
     display: block;
     list-style-type: none;
     background-color: rgb(245, 238, 234);
@@ -211,7 +211,7 @@ p.margin-bottom {
 .menu2 {
     padding: 0 8rem 0 0.5rem;
     line-height: 2.5rem;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     width: 150%;
 }
@@ -380,6 +380,8 @@ p.bolder {
     color: #fff;
     text-decoration: none;
     position: relative;
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
 
 .footer-grid p {
