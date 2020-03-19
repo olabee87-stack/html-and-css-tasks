@@ -163,6 +163,10 @@ p {
     flex: 3;
 }
 
+p {
+    line-height: 1.6;
+}
+
 .aside-list li {
     justify-items: right;
     border: 0;
